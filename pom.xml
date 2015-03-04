@@ -11,7 +11,7 @@
 	<packaging>jar</packaging>
 	<groupId>org.webjars</groupId>
 	<artifactId>viewerjs</artifactId>
-	<version>0.5.5</version>
+	<version>0.5.5-SNAPSHOT</version>
 	<name>ViewerJS</name>
 	<description>WebJar for ViewerJS</description>
 	<url>http://webjars.org</url>
@@ -19,12 +19,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<upstream.version>0.5.5</upstream.version>
-		<upstream.url>http://viewerjs.org/releases/viewerjs-0.5.5.zip</upstream.url>
+		<upstream.url>http://viewerjs.org/releases/viewerjs-${upstream.version}.zip</upstream.url>
 		<destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
 		<requirejs>
 			{
 				"paths": {
-					"viewerjs": "ViewerJS/viewer.js"
+					"viewerjs": "ViewerJS/viewer"
 				}
 			}
 		</requirejs>
